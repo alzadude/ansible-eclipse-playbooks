@@ -1,0 +1,9 @@
+---
+
+- hosts: linux-workstation
+  become: true
+
+  roles:
+    - { role: alzadude.eclipse, 
+        eclipse_url: "http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/1/eclipse-java-neon-1-linux-gtk-x86_64.tar.gz&r=1" }
+
